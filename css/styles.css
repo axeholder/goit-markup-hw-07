@@ -63,13 +63,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* основной цвет текста 757575, 100 % */
-/* вторичный цвет текста 212121, 100 % */
-/* акцент 2196F3, 100 % */
-/* лого хедер 000000, 100 % */
-
-/* фон FFFFFF, 100% */
-/* футер + герой 2F303A, 100% */
 
 /* хедер */
 /* стилизация лого */
@@ -222,7 +215,7 @@ img {
   margin-left: auto;
 }
 
-.hero .container {
+.hero-container {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -239,7 +232,7 @@ img {
   width: 696px;
 }
 
-.button {
+.hero-button {
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -290,7 +283,7 @@ img {
   border-radius: 4px;
 }
 
-.close-modal {
+.modal-close {
   margin-top: 8px;
   margin-right: 8px;
   margin-left: auto;
@@ -305,12 +298,12 @@ img {
   transition: color var(--animation-duration) var(--animation-type);
 }
 
-.close-modal:hover,
-.close-modal:focus {
+.modal-close:hover,
+.modal-close:focus {
   color: var(--accent-color);
 }
 
-.modal .title {
+.modal-title {
   margin-top: 2px;
   font-weight: 700;
   font-size: 20px;
@@ -351,7 +344,7 @@ img {
   transition: fill var(--animation-duration) var(--animation-type);
 }
 
-.input {
+.modal-input {
   display: block;
 
   width: 100%;
@@ -364,9 +357,9 @@ img {
   transition: border var(--animation-duration) var(--animation-type);
 }
 
-.item:focus-within .input,
+.item:focus-within .modal-input,
 .item:focus-within .modal-icon,
-.item:hover .input,
+.item:hover .modal-input,
 .item:hover .modal-icon {
   cursor: pointer;
   border-color: var(--accent-color);
@@ -399,7 +392,7 @@ img {
   color: var(--main-text-color);
 }
 
-.form-name .link {
+.modal-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
@@ -424,7 +417,7 @@ img {
   margin-top: 20px;
 }
 
-.submit-btn {
+.modal-button {
   margin-top: 30px;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -432,7 +425,7 @@ img {
   border: none;
 }
 
-.submit-btn .text {
+.modal-button-text {
   display: block;
   font-weight: 700;
   font-size: 16px;
