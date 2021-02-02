@@ -206,10 +206,10 @@ img {
 
 /* герой */
 .hero {
-  /* background-color: #2f303a; */
   background-color: #c4c4c4;
   color: #ffffff;
 }
+
 .hero-bg-img {
   max-width: 1600px;
   height: 600px;
