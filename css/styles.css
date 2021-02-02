@@ -450,7 +450,7 @@ img {
   margin: -1px;
 }
 
-.section-features {
+.features {
   padding-top: 96px;
 }
 
@@ -459,7 +459,7 @@ img {
   text-align: left;
 }
 
-.features-list .item::before {
+.features-item::before {
   content: '';
   display: inline-block;
   background-color: #f5f4fa;
@@ -487,11 +487,11 @@ img {
   background-image: url('../images/icons/astronaut.svg');
 }
 
-.features-list > .item:not(:last-child) {
+.features-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-list .title {
+.features-title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -499,7 +499,7 @@ img {
   text-transform: uppercase;
 }
 
-.features-list .text {
+.features-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -507,22 +507,22 @@ img {
 }
 
 /* чем мы занимаемся */
-.work-description {
+.occupation {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.description-list {
+.occupation-list {
   display: flex;
   margin-top: 50px;
 }
 
-.description-list .item {
+.occupation-item {
   position: relative;
   width: 370px;
 }
 
-.overlay .text {
+.occupation-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -532,7 +532,7 @@ img {
   color: #ffffff;
 }
 
-.description-list .overlay {
+.occupation-overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -542,34 +542,34 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.description-list .item:not(:last-child) {
+.occupation-item:not(:last-child) {
   margin-right: 30px;
 }
 
 /* наша команда */
-.our-team {
+.team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.ot-list {
+.team-list {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
 
-.ot-list .item {
+.team-item {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.ot-list .item:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.ot-list .title {
+.team-title {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -578,7 +578,8 @@ img {
   margin-top: 30px;
   height: 19px;
 }
-.ot-list .position {
+
+.team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -588,23 +589,22 @@ img {
   height: 19px;
 }
 
-.item .social-list {
+.social {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 30px;
 }
 
-.social-list {
+.social {
   display: flex;
   padding: 0;
-  margin: 0;
 }
 
-.social-list .list:not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-link {
+.social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -622,8 +622,8 @@ img {
   fill: currentColor;
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -742,7 +742,7 @@ img {
   margin-left: 70px;
 }
 
-.footer-social .social-list {
+.footer-social .f-social-list {
   margin-top: 20px;
 }
 
@@ -752,7 +752,7 @@ img {
   transition: background-color var(--animation-duration) var(--animation-type);
 }
 
-.social-icon {
+.f-social-icon {
   fill: currentColor;
 }
 
