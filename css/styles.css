@@ -630,22 +630,22 @@ img {
 
 /* постоянные клиенты */
 
-.container-clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.list-clients {
+.clients-list {
   display: flex;
 
   margin-top: 50px;
 }
 
-.item-client {
+.clients-item {
   display: flex;
 }
 
-.link-client {
+.clients-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -658,17 +658,17 @@ img {
   transition: all var(--animation-duration) var(--animation-type);
 }
 
-.icon-client {
+.clients-icon {
   fill: currentColor;
 }
 
-.link-client:hover,
-.link-client:focus {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.item-client:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
