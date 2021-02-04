@@ -679,7 +679,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
@@ -690,7 +690,7 @@ img {
   align-items: flex-start;
 }
 
-.foter-logo {
+.footer-logo {
   color: var(--accent-color);
   font-family: Raleway;
 
@@ -702,6 +702,7 @@ img {
 .f-studio {
   color: #ffffff;
 }
+
 .adress {
   display: flex;
   flex-direction: column;
@@ -713,22 +714,26 @@ img {
   line-height: 1.71;
   margin-top: 20px;
 }
-.adress .link {
+.adress-item {
   height: 21px;
 }
 
-.adress .link:not(:first-child) {
+.adress-item:not(:first-child) {
   margin-top: 9px;
 }
 
-.adress a {
+.adress-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.join-in-social {
+.links {
+  margin-left: 70px;
+}
+
+.links-text {
   text-transform: uppercase;
   color: #ffffff;
   font-style: normal;
@@ -738,43 +743,53 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer-social {
-  margin-left: 70px;
-}
-
-.footer-social .f-social-list {
+.links-list {
+  display: flex;
   margin-top: 20px;
 }
 
-.footer-social .icon-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  transition: background-color var(--animation-duration) var(--animation-type);
+.links-item:not(:last-child) {
+  margin-right: 10px;
 }
 
-.f-social-icon {
+.links-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all var(--animation-duration) var(--animation-type);
+}
+
+.links-icon {
   fill: currentColor;
 }
 
-.footer-social .icon-link:hover,
-.footer-social .icon-link:focus {
+.links-link:hover,
+.links-link:focus {
   background-color: var(--accent-color);
 }
 
-.join-spam {
+.spam {
   display: flex;
   margin-right: 0;
   margin-left: auto;
 }
 
-.input-position {
+.spam-position {
   width: 358px;
   margin-right: 12px;
 }
 
-.input-position .input {
+.spam-input {
   padding-left: 16px;
   height: 50px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   margin-top: 20px;
@@ -782,7 +797,7 @@ img {
   color: #ffffff;
 }
 
-.join-spam .text {
+.spam-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -791,11 +806,11 @@ img {
   color: #ffffff;
 }
 
-.b-container {
+.spam-container {
   display: flex;
 }
 
-.f-button {
+.spam-button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -812,7 +827,7 @@ img {
   align-self: flex-end;
 }
 
-.f-button .text {
+.spam-button .text {
   display: block;
   text-transform: none;
   font-weight: 700;
@@ -821,7 +836,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.icon-send {
+.spam-icon {
   fill: currentColor;
   margin-left: 10px;
 }
