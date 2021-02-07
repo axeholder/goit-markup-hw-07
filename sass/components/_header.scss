@@ -23,10 +23,6 @@
     margin-right: 50px;
   }
 
-  &-current::after {
-    opacity: 1;
-  }
-
   &-current {
     color: $accent-color;
   }
@@ -79,6 +75,10 @@
   &:hover::after {
     opacity: 1;
   }
+}
+
+.navigation-current::after {
+  opacity: 1;
 }
 
 /* контакты хедер */
